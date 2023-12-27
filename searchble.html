@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Searchable Dropdown</title>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include Select2 CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha384-3m8anK5QECqrYnOVGrHqBfN3gjnBMiD8RmUCP42GmDeEc/roYMKJMeWtD9s9JU0L" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha384-k6RqeDR6RlQ7pVeXfH6QrZ8M5gqVXXuWoF+7U5ec9d/Q8vcczUFjxgJ1JC3fEKDK" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <h1>Searchable Dropdown Example</h1>
+
+  <select id="searchDropdown" style="width: 300px;">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <!-- Add more options as needed -->
+  </select>
+
+  <script>
+    // Initialize Select2
+    $(document).ready(function() {
+      $('#searchDropdown').select2();
+    });
+  </script>
+
+</body>
+</html>
